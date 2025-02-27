@@ -5,46 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe App</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
-        <h1>Recipe Finder</h1>
-        <input type="text" id="search" placeholder="Search by ingredients, cuisine, or diet">
-        <button id="searchBtn">Search</button>
+        <h1>Recipe App with Meal Planning</h1>
     </header>
-    
     <main>
-        <section id="searchResults">
-            <!-- Search results will be displayed here -->
+        <!-- Search Section -->
+        <section id="search">
+            <h2>Search Recipes</h2>
+            <input type="text" id="search-input" placeholder="Search by ingredient, cuisine, or diet">
+            <button onclick="searchRecipes()">Search</button>
+            <div id="search-results"></div>
         </section>
-        
-        <section id="recipeDetails" class="hidden">
-            <!-- Detailed recipe view -->
+
+        <!-- Recipe Details Section -->
+        <section id="recipe-details" style="display: none;">
+            <h2>Recipe Details</h2>
+            <img id="recipe-image" alt="Recipe Image">
+            <h3 id="recipe-title"></h3>
+            <p id="recipe-description"></p>
+            <h4>Ingredients</h4>
+            <ul id="recipe-ingredients"></ul>
+            <h4>Instructions</h4>
+            <p id="recipe-instructions"></p>
+            <h4>Nutritional Information</h4>
+            <p id="recipe-nutrition"></p>
+            <button onclick="addToFavorites()">Add to Favorites</button>
+            <button onclick="addToMealPlan()">Add to Meal Plan</button>
         </section>
-        
-        <section id="mealPlanner">
-            <h2>Meal Planner</h2>
-            <div id="plannedMeals">
-                <!-- User planned meals will be shown here -->
-            </div>
+
+        <!-- Meal Planning Section -->
+        <section id="meal-plan">
+            <h2>Meal Plan</h2>
+            <ul id="meal-plan-list"></ul>
         </section>
-        
+
+        <!-- Favorites Section -->
         <section id="favorites">
             <h2>Favorites</h2>
-            <div id="savedRecipes">
-                <!-- User saved recipes will be shown here -->
-            </div>
+            <ul id="favorites-list"></ul>
         </section>
-        
-        <section id="searchHistory">
-            <h2>Search History</h2>
-            <ul id="pastSearches">
-                <!-- Past searches will be listed here -->
-            </ul>
+
+        <!-- Past Searches Section -->
+        <section id="past-searches">
+            <h2>Past Searches</h2>
+            <ul id="past-search-list"></ul>
         </section>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
-
-    
