@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #ff6347;
+    padding: 20px;
+    color: white;
+}
+
+input, button {
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+section {
+    width: 80%;
+    background: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hidden {
+    display: none;
+}
+
+.recipe-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.recipe-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.recipe-card h3 {
+    margin: 10px 0;
+}
+
+.recipe-card a {
+    text-decoration: none;
+    color: #ff6347;
+    font-weight: bold;
+}
+
+#favorites, #mealPlanner {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#favorites h2, #mealPlanner h2 {
+    color: #ff6347;
+}
+
+.favorite-card, .meal-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.favorite-card img, .meal-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.favorite-card button, .meal-card button {
+    background-color: #d9534f;
+    color: white;
+    margin-top: 10px;
+}
+
+.favorite-card button:hover, .meal-card button:hover {
+    background-color: #c9302c;
+}
